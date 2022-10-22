@@ -87,6 +87,7 @@ function operatorIsClicked(operator) {
         secondOperand = displayValue;
         result = operate(Number(firstOperand), Number(secondOperand), firstOperator);
         displayValue = result.toString();
+        displayUpdate();
         firstOperand = displayValue;
         result = null;
     } else if(firstOperator != null && secondOperator != null) {
@@ -95,6 +96,7 @@ function operatorIsClicked(operator) {
         result = operate(Number(firstOperand), Number(secondOperand), secondOperator);
         secondOperator = operator;
         displayValue = result.toString();
+        displayUpdate();
         firstOperand = displayValue;
         result = null;
     } else { 
