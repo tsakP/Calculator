@@ -169,7 +169,6 @@ const main = function() {
     })
 }
 
-clearDisplay();
 main();
 
 
